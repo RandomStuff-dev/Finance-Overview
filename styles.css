@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #DCE1E3; /* Warm light grey for the background, clean and modern */
+  color: #2A2A2A; /* This will be a neutral dark shade for text */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White for the container, with a shadow for depth */
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1, h3 {
+  color: #004E7C; /* Deep, warm blue for header titles */
+  margin: 0;
+}
+
+.finance-section, .finance-summary {
+  margin-bottom: 30px;
+}
+
+h2 {
+  border-bottom: 2px solid #591C0B; /* Warm red for underlines, for emphasis */
+  color: #004E7C; /* Harmonizing with the header color */
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.finance-list, .finance-list-paid {
+  list-style: none;
+  padding: 0;
+  margin-left: 0; /* Ensure there's no indentation */
+}
+
+.finance-list li, .finance-list-paid li {
+  font-weight: bold;
+  background-color: rgba(233, 233, 233, 0.541); /* Subtle background for list items */
+  margin-bottom: 8px;
+  padding: 15px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.finance-list li {
+  border-left: 7px solid #B73225; /* Warm red for the left border, indicating outstanding amounts */
+}
+
+.finance-list-paid li {
+  border-left: 7px solid #1f6e1f; /* Green for the left border, indicating paid amounts */
+}
+
+.summary-amount {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #004E7C; /* Deep, warm blue for summary amounts */
+}
+
+.amount-paid {
+  color: #59C1CB; /* Soft, warm green for paid amounts, conveying positive action */
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 40px); /* Adjusted for better spacing */
+    margin: 20px auto; /* Center the container */
+    padding: 15px; /* Slightly less padding on smaller screens */
+  }
+
+  .finance-list li, .finance-list-paid li {
+    padding: 10px; /* Less padding on smaller screens for more space */
+  }
+
+  h1, h2 {
+    padding: 0 10px; /* Ensure text doesn't touch the edges */
+  }
+}
